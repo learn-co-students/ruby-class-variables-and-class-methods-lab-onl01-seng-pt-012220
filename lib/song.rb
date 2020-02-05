@@ -31,7 +31,7 @@ hash[key] = value.length
  end
 end
   def self.artist_count
-    hash = @@artists.group_by{ |gen| gen }
+    hash = @@artists.group_by{ |art| art }
     hash.each do |key, value|
       hash[key] = value.length
     end
